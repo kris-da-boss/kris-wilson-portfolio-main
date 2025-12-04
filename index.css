@@ -243,6 +243,7 @@ margin-top: 10px;
 .about-me-demo h3{
     background-color: var(--gen-theme);
     transform: skewY(7deg);
+    margin-bottom: 15px;
 }
 .view-site{
     padding: var(--gen-padding);
