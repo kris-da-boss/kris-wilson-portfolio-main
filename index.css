@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --gen-theme: rgb(38, 27, 48);
+    --gen-padding: 10px;
+    --gen-margin:10px;
+    --full-width:100%;
+}
+/* Menu Sytles */
+.menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    padding: 5px;
+    width: var(--full-width);
+    transition: all .5s ease-in ;
+    z-index: 1000;
+}
+.menuheader{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding: var(--gen-padding);
+}
+.menusocials{
+    background-color: rgb(16, 16, 53);
+    padding: 20px;
+    
+}
+.navigations p{
+margin-bottom: var(--gen-margin);
+margin-left: var(--gen-margin);
+margin-right: var(--gen-margin);
+border-radius: 5px;
+border-bottom: 2px solid white;
+background-color: blue;
+padding: var(--gen-padding);
+text-align: center;
+font-weight: bold;
+font-size: larger;
+animation: navigations 1s ease infinite;
+}
+@keyframes navigations {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.showMenu{
+    left: 0;
+    transition: left .5s ease-in;
+}
+body{
+    background-image: linear-gradient(to bottom, var(--gen-theme), black);
+    color: white;
+    padding: 10px;
+    height: 100%;
+}
+.header{
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-image: linear-gradient(to right, black, var(--gen-theme));
+padding: var(--gen-padding);
+padding-bottom: 20px;
+margin:   -10px  -10px 0 -10px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.name{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.occupation{
+    text-align: center;
+}
+.profilePicture{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.intro-note{
+    margin-top: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.intro-note a{
+    margin-top: var(--gen-margin);
+    color: white;
+}
+.intro-wrapper{
+background-color: rgb(6, 6, 44);
+border-radius: 100px 0px;
+height: 230px;
+display: flex;
+align-items: center;
+padding: var(--gen-padding);
+margin-top: 10px;
+}
+.about-me-link{
+    padding: var(--gen-padding);
+    background-color: blueviolet;
+    display: flex;
+    gap: 10px;
+}
+.about-me-link a{
+    color: white;
+}
+.skills-tools{
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, rgb(15, 15, 95), black);
+     border-radius: 40px;
+     padding: var(--gen-padding);
+}
+
+.skills-tools .h2, .h3{
+    text-align: center;
+    margin-bottom: var(--gen-margin);
+}
+.skills-note{
+    text-align: center;
+    color:aliceblue;
+}
+.frontend-skills ,.tech-stack-flex{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.frontend-skills p, .tech-stack-flex p{
+    padding: var(--gen-padding);
+    margin-right: var(--gen-margin);
+    margin-bottom: var(--gen-margin);
+    background-color: black;
+    color: yellow;
+    border-radius: 10px;
+    animation: skills 1s ease-in-out infinite;
+}
+@keyframes skills {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.03);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.tools{
+    margin: var(--gen-margin);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.tools li{
+    margin-bottom: var(--gen-margin);
+}
+.extraSkills{
+    background-color: rgb(4, 48, 33);
+    padding: var(--gen-padding);
+    text-align: center;
+}
+.education{
+    margin-top: var(--gen-margin);
+    padding: var(--gen-padding);
+     background-image: linear-gradient(to bottom, rgb(15, 15, 95), black);
+}
+.my-work{
+    background-image: linear-gradient(to bottom, black, rgb(15, 15, 95));
+    text-align: center;
+    margin-top: 20px;
+    padding: var(--gen-padding);
+}
+.projectCard{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: var(--gen-padding);
+}
+.projectCard img{
+    width: 100%;
+    border-radius: inherit;
+}
+.projectCard figcaption{
+    font-weight: bold;
+}
+.projectCard a{
+    color: black;
+    padding: 3px;
+    background-color: white;
+}
+.project-content figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+/* Ecommerce project */
+.tech-stack-flex{
+    display: flex;
+}
+.status{
+    padding: var(--gen-padding);
+    background-color: gray;
+}
+.project-overview{
+    background-image: linear-gradient(to bottom, rgb(24, 24, 75), rgb(22, 22, 43));
+    padding: var(--gen-padding);
+    border-radius: 40px 40px 0 0;
+}
+.about-me-demo{
+    background-color: rgb(17, 17, 58);
+    padding-top: var(--gen-padding);
+    margin-top: 30px;
+}
+.about-me-demo h3{
+    background-color: var(--gen-theme);
+    transform: skewY(7deg);
+}
+.view-site{
+    padding: var(--gen-padding);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.view-site a{
+    color: black;
+    text-decoration: none;
+     background-color: white;
+     padding: var(--gen-padding);
+     animation: view-site 4s ease-in-out  infinite;
+    border-radius: 10px;
+}
+
+@keyframes view-site {
+    from{
+        background-color: rgb(6, 6, 61);
+        color: white;
+    }
+    to{
+        background-color: white;
+        color:rgb(6, 6, 61);
+    }
+}
+.contact-message{
+    background-color: white;
+    color: black;
+    animation: contact 2s ease infinite;
+}
+@keyframes contact {
+     0%{
+        transform: scale(1);
+     }
+     30%{
+        transform: scale(1.03);
+     }
+     40%{
+        transform: scale(1);
+     }
+     70%{
+        transform: scale(1.03);
+     } 
+}
+.contact{
+    text-align: center;
+}
+.contact a{
+    color: white;
+}
