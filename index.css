@@ -84,6 +84,7 @@ background-image: linear-gradient(to right, black, var(--gen-theme));
 padding: var(--gen-padding);
 padding-bottom: 20px;
 margin:   -10px  -10px 0 -10px;
+z-index: 1000;
 }
 .header a{
     color: white;
