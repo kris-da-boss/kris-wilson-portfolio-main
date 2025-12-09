@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <!-- styles -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
      <!-- Icons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -21,8 +23,8 @@
         <i class="fa-solid fa-xmark closeMenu"></i>
         </div>
     <div class="navigations">
-      <p><a href="#aboutme">About Me</a></p>
       <p><a href="index.html">Home</a></p>
+      <p><a href="index.html#aboutme">About Me</a></p>
        <p><a href="projects.html">Latest Project</a></p>
     <p><a href="index.html#otherproject">Other Project</a></p>
     </div><br><br>
@@ -30,20 +32,46 @@
     <h3 class="h3">SOCIALS</h3>
     <div class="navigations">
       <p><a href="https://github.com/kris-da-boss" target="_blank">Checkout My GitHub Repositories</a></p>
-    <p><strong>Let's Chat on Watsap:</strong> 08134211169</p>
+    <p><strong>Let's Chat on Watsap:</strong>08134211169</p>
     <p><a href="mailto:kriswilson00000@gmail.com">send me an email: kriswilson00000@gmail.com</a></p>
     </div>
     </div>
     </div>
+        <!-- Desktop Screen Header -->
+        <div class="header-desktop-screen">
+        <p><a href="index.html">KingKris </a></p>
+        <div>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="index.html#aboutMe-desktop">About Me</a></p>
+          <p><a href="index.html#otherproject">Other project</a></p>
+          <p><a href="index.html#contact-message"> Contact Me</a></p> 
+        </div>
+        </div> 
     <!-- Content -->
     <div class="project-content"><br>
         <h3 class="h3">Mara's Beauty Ecommerce-website Project</h3><br>
-        <figure>
+        <div class="mobile-image"> 
+          <figure >
           <img src="images/screenshot3.jpg" alt="" width="300" height="400">
           <figcaption>Home page</figcaption>
         </figure>
+        </div>
+       
+        <!-- Image display Destop Screen -->
+        <div class="desktop-image">
+          <figure>
+          <img src="images/desktop1.jpg" alt="" width="300" height="300">
+        </figure>
+        <figure>
+            <img src="images/desktop6.jpg" alt="" width="300" height="300">
+        </figure>
+        <figure>
+          <img src="images/desktop8.jpg" alt="" width="300" height="300">
+        </figure>
+        </div>
+        
         <br><br>
-        <p><strong>Tech Stack:</strong></p><br>
+        <p class="tech-stack"><strong>Tech Stack</strong></p><br>
         <div class="tech-stack-flex">
         <p>HTML</p>
         <p>CSS</p>
@@ -53,135 +81,243 @@
         <p class="status">STATUS: <i>frontend  - backend in progress</i></p><br><br>
         <div class="project-overview">
        <h3 class="h3">Project Overview</h3>
-       <p>This e-commerce website is one of my most comprehensive and ambitious projects. It was created to demonstrate my ability to design and develop a modern, responsive, and scalable online store using HTML, CSS, JavaScript, and React on the frontend. <br><br>
+       <p>This e-commerce website is one of my most comprehensive and ambitious projects. It was created to demonstrate my ability to design and develop a modern, responsive, and scalable online store using HTML, CSS, JavaScript, and React on the frontend. 
+        <div class="mobile-image">
+        <br><br>
        <figure>
           <img src="images/screenshot7.jpg" alt="" width="300" height="400">
           <figcaption>Cart page</figcaption>
         </figure><br>
+        </div>
        The goal was to build a clean, intuitive shopping experience while applying real-world development practices such as component architecture, reusable UI elements, state management, and responsive design.
       </p>
       </div>
       <br><br>
       <h3 class="h3">🌐 Frontend Development (Completed)</h3>
-      <p>HTML for structured and semantic layouts</p><br>
+      <div>
+        <div class="frontend-note">
+      <p >HTML for structured and semantic layouts</p><br>
       <p>CSS (plus responsive design techniques) for styling and layout</p><br>
       <p>JavaScript for interactivity, dynamic updates, and logic</p><br>
       <p>React for building reusable components, managing state, and delivering a fast, seamless user experience
       </p><br>
+      </div>
       <div>
-       <p>Some highlighted features I’ve already built include:</p>
-       <hr><br><br>
-       <p><strong>✔ Modern and Responsive UI</strong> <br>
-       Every page adapts to mobile, tablet, and desktop screens with smooth layouts and clean aesthetics. <br><br>
-       <figure>
+       <hr><br>
+       <div class="response-title-desktop">
+        <h2><strong>✔ Modern and Responsive UI</strong></h2><br>
+       <p>Every page adapts to mobile, tablet, and desktop screens with smooth layouts and clean aesthetics.</p> 
+       </div>
+       <br><br>
+       <div class="response-desktop">
+        <div>
+          <figure>
           <img src="images/screenshot6.jpg" alt="" width="300">
-          <figcaption>Tablet screen</figcaption>
         </figure>
+        <p>Tablet screen</p> 
+        </div>
         <br><br>
+        <div>
         <figure>
           <img src="images/screenshot9.jpg" alt="" width="300">
-          <figcaption>Desktop screen</figcaption>
-        </figure><br>
-        </p>
-        <p><strong>✔ React Component Architecture
-        </strong><br><br>
-        Reusable components were created for: <br><br>
-         - Navigation bar <br><br>
+        </figure>
+        <p>Desktop screen</p>
+        </div>
+          <br>
+       </div>
+        </p><br><br><br>
+        <!-- Architecture section -->
+        <div >
+        <h2 class="architecture-title"><strong>✔ React Component Architecture
+        </strong></h2><br>
+       <p class="architecture-title">Reusable components were created for:</p><br>
+       <br>
+       <div class="components-desktop">
+       <div>
+         <p>- Navigation bar</p>
+         <br>
          <figure>
           <img src="images/screenshot8.jpg" alt="" width="300" height="400">
-          <figcaption>Navigation bar</figcaption>
         </figure>
-        - Product cards <br><br>
-        - Product details page <br><br>
-        <figure>
+       </div><br>
+       <div>
+        <p>- Product cards</p> <br>
+         <figure>
           <img src="images/screenshot13.jpg" alt="" width="300" height="400">
-          <figcaption>Product details page</figcaption>
         </figure>
-        - Cart items <br><br>
+       </div><br>
+       <div>
+         <p>- Cart items</p>  <br>
         <figure>
           <img src="images/screenshot7.jpg" alt="" width="300" height="400">
-          <figcaption>Cart page</figcaption>
         </figure>
-         - Buttons and UI elements <br><br>
+       </div>
+       </div><br>
+         <div class="mobile-notes">
+        <p>- Product details page</p> <br>
+        <p>- Buttons and UI elements</p>  <br>
         This makes the UI more maintainable and scalable.
+         </div>
+    </div>
+    <br><br>
+    <div class="desktop-flex-note">
+    <div>
+      <h2><strong>✔ Dynamic Product Display:</strong></h2> <br>
+     <p class="p-note">Products are rendered dynamically using React logic, demonstrating how real online stores manage inventory on the client side.
     </p>
+    </div>
     <br>
-    <p>
-      <strong>✔ Dynamic Product Display:</strong> <br><br>
-      Products are rendered dynamically using React logic, demonstrating how real online stores manage inventory on the client side.
+    <div>
+     <h2><strong>✔ Basic Cart UI</strong></h2> <br>
+    <p class="p-note">The user can view selected products, review their items, and see the cart layout (functionality will be fully completed when the backend is connected).
     </p>
-    <br>
-    <p>
-        <strong>✔ Basic Cart UI</strong> <br><br>
-      The user can view selected products, review their items, and see the cart layout (functionality will be fully completed when the backend is connected).
-    </p>
+    </div>
+   </div>
       </div>
-      <br>
-      <div class="backendnote">
+      <br><br><hr><br>
+      <div class="">
        <h3 class="h3">🏗️ Backend & Database Development (In Progress)</h3>
-       <p>
-                I am currently working on transforming this project from a frontend-only store into a fully functional full-stack e-commerce application. <br><br>
-
-        <strong>The backend will include:</strong> <br><br>
-
-       <strong> ✔ User Authentication</strong><br>
-
+       <p class="backend-progress-note-desktop">
+                I am currently working on transforming this project from a frontend-only store into a fully functional full-stack e-commerce application. This will Include:
+              </p><br><br>
+         <div class="backendnote-desktop">
+          <div>
+        <h3> ✔ User Authentication</h3><br><br>
         - User signup <br><br>
         - Login <br><br>
         - Secure password hashing <br><br>
         - Session/token-based authentication <br><br>
+       </div>
+       <div>
+       <h3>✔ Product Management System</h3> <br><br>
 
-
-       <strong>✔ Product Management System</strong> <br><br>
-
-        - Add, edit, and delete products <br><br>
+       - Add, edit, and delete products <br><br>
        - Real-time product data stored in the database <br><br>
         - Admin dashboard (planned) <br><br>
-       <strong>✔ Shopping Cart & Order System</strong> <br><br>
+        </div>
+        <div>
+       <h3>✔ Shopping Cart & Order System</h3> <br><br>
       - Add-to-cart functionality <br><br>
       - Remove/update cart items <br><br>
       - Checkout process <br><br>
       - Order history per user <br><br>
-
-       - <strong>✔ Database Integration</strong> <br><br>
-        Depending on the final structure, the backend/database stack will likely use: <br><br>
-
+        </div>
+        <div>
+       <h3>✔ Database Integration</h3> <br><br>
+       <span class="mobile-notes"> Depending on the final structure, the backend/database stack will likely use: </span><br><br>
         Node.js & Express for server logic <br><br>
 
         MongoDB or MySQL for storing user data, products, and orders <br><br>
-       <strong> ✔ Secure Payment Processing (Planned)</strong><br><br>
-       Integration with payment providers such as: <br><br>
+        </div>
+        <div>
+       <h3> ✔ Secure Payment Processing (Planned)</h3><br><br>
+       <span class="mobile-notes">Integration with payment providers such as: <br><br></span>
         - Paystack <br><br>
        - Stripe <br><br>
         - Flutterwave <br><br>
-       This will enable real transactions and complete the full-stack experience.
+      <span class="mobile-notes"> This will enable real transactions and complete the full-stack experience.</span>
        </p>
-      </div><br><br>
+       </div>
+       </div>
+      </div> 
+      <br><br>
       <div  class="about-me-demo">
         <h3>🚀What This Project Demonstrates About Me</h3>
-        <p>
-     - Strong frontend development skills <br><br>
+        <div class="about-me-demo-desktop">
+          <div>
+       - Strong frontend development skills <br><br>
      - Ability to design clean, responsive, user-friendly UI <br><br>
     - Understanding of real-world e-commerce features <br><br>
-     - Growth into backend development <br><br>
+          </div>
+    <div>
+    - Growth into backend development <br><br>
     - Ability to build full-stack web applications <br><br>
-    - Experience with modern technologies (React, Node, databases) <br><br>
-    - Passion for improving and expanding my projects <br><br>
-        </p>
+    - Experience with modern technologies (React, Node, databases) <br>
+    </div>
+    <p class="mobile-notes">- Passion for improving and expanding my projects</p> <br><br>
+        </div>
       </div><br>
-      <p class="view-site"><a href="https://kris-da-boss.github.io/ecommerce-portfolio" target="_blank" >View Website</a></p>
+      <div class="view-site"><a href="https://kris-da-boss.github.io/ecommerce-portfolio" target="_blank" >View Website</a></div>
     </div>
     <br>
-     <footer>  
-      <h2 class="contact-message h3">I Will love to hear from you</h2>
+
+    <footer>  
+      <h2 class="contact-message" id="contact-message">I'll love hearing from you</h2><br><br>
       <div class="contact">
-      <h3>Contact Me</h3>
-     <a href="mailto:kriswilson00000@gmail.com">Email: kriswilson00000@gmail.com</a><br><br>
-     <a href="tel:08134211169">Call Me</a><br>
+        <h3>Contact Me</h3>
+        <div>
+        <div>
+     <a href="mailto:kriswilson00000@gmail.com">Email: kriswilson00000@gmail.com</a>
+        </div>
+      <br><br>
+      <div>
+      <a href="tel:08134211169">Call Me</a><br>
      <p>Send a Message on Watsap: 08134211169</p><br>
-     <p>&copy; 2025 | Designed and developed by Chris Wilson  (aka KingKris)</p>
       </div>
+      </div>
+      <button class="formButton">Fill a Form?</button>
+      
+      <!-- <h3><br>PREFER A FORM?</h3> -->
+
+      <!-- user form desktop -->
+        <form action="https://formspree.io/f/mvgewolb" class="formDesktop">
+           <p class="galaxy"></p>
+          <div>
+            <label for="name" >Name</label>
+          <input type="text" required placeholder="Your name or nickname" name="name" id="name">
+          </div>
+         
+           <div>
+          <label for="number"> Phone Number</label>
+          <input type="tel" required placeholder="phone number" name="phone" id="number">
+          </div>
+          
+           <div>
+          <label for="email"> Email</label>
+           <input type="text" required placeholder="email" name="email" id="email">
+           </div>
+          
+          <div>
+           <label for="message"> Message</label>
+          <textarea name="message" id="message" cols="40" rows="7" placeholder="drop me a message"></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+
+       <p>&copy; 2025 | Designed and developed by Chris Wilson  (aka KingKris)</p>
+      </div>
+      <!-- User Form -->
+       <div class="formOverlay"></div>
+        <form action="https://formspree.io/f/mvgewolb" method="post" class="form-mobile">
+          <!-- animation -->
+          <p class="galaxy"></p>
+          <div>
+            <label for="name" >Name:</label>
+          <input type="text" required placeholder="Your name or nickname" name="name" id="name">
+          </div>
+         
+           <div>
+          <label for="number"> Phone Number:</label>
+          <input type="tel" required placeholder="phone number" name="phone" id="number">
+          </div>
+          
+           <div>
+          <label for="email"> Email: </label>
+           <input type="text" required placeholder="email" name="email" id="email">
+           </div>
+          
+          <div>
+           <label for="message"> Message:</label>
+          <textarea name="message" id="message" cols="40" rows="7" placeholder="drop me a message"></textarea>
+          </div>
+          
+
+          <button type="submit">submit</button>
+        </form>
+        
+   
     </footer>
+   
     <script src="index.js"></script>
 </body>
 </html>

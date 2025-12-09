@@ -1,0 +1,300 @@
+:root{
+    --gen-theme: rgb(38, 27, 48);
+    --gen-padding: 10px;
+    --gen-margin:10px;
+    --full-width:100%;
+}
+/* Response for destop screen */
+@media (min-width:1000px) {
+    .header{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .header-desktop-screen {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--gen-margin);
+    margin-bottom: 3rem;
+    }
+    .header-desktop-screen div{
+        display: flex;
+        gap: 20px;
+    }
+    .header-desktop-screen p , a {
+        color:aquamarine;
+        text-decoration: none;
+    }
+    .header-desktop-screen p{
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .mobile-profile{
+        display: none;
+    }
+    /* About and profile */
+    .profile-about-header{
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        padding: 20px;
+        position: relative;
+    }
+    .profile-design, 
+    .profile-design::after,
+    .profile-design::before {
+        content: '';
+        background-color: rgba(108, 158, 202, 0.144);
+        padding: 100px;
+        border-radius: 50%;
+        position:absolute;
+        right: 20%;
+    }
+    .profile-design::after{
+        transform: translate(30px, 100px); 
+    }
+    .profile-design::before{
+        transform: translate(50px, -100px); 
+    }
+    .profile-image-header{
+        background-color: rgba(255, 255, 255, 0.541);
+        border-radius: 35px;
+        padding:2px;
+        clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 97%);
+        position: absolute; 
+        top: 10px;
+        left: 30px;
+        z-index: 1;
+    }
+    .profile-image-header img{
+        width: 300px;
+        border-radius: inherit;
+        clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 97%);
+    }
+    .name-desktop{
+    font-size: 5rem;
+    }
+    .name-desktop span{
+        color: rgb(142, 142, 187);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+    .intro-note-desktop{
+      font-size: large;  
+    }
+    .project-link{
+        border: 2px white solid;
+        display: inline;
+        padding: var(--gen-padding);
+        border-radius: 20px;
+        background-color: rgb(7, 7, 24);
+    }
+    .h2{
+        font-size: xx-large;
+    }
+    .h3 {
+        font-size: xx-large;
+    }
+    .frontend-skills, .tech-stack-flex{
+       gap: 20px;
+    }
+    .frontend-skills p, .tech-stack-flex p{
+     padding: 20px;
+     color: yellow;
+    }
+    .tools{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .extraSkills h3{
+      color: greenyellow;
+      margin-bottom: 5px;
+    }
+    .extraSkills p{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .university-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .education{
+         margin: var(--gen-margin);
+    }
+    .university-flex p :first-child{
+        display: none;
+    }
+    .university-flex :last-child, p :last-child {
+        display: inline;
+    }
+    .contact div{
+        display: flex;
+        justify-content: center;
+        gap: 15px;  
+        margin-top: var(--gen-margin);
+    }
+    /* Project Desktop */
+    /* Set mobile Irrelivant mobile displays to none */
+     .mobile-image, 
+     .mobile-notes,
+     .projectCard,
+     .formButton{
+        display: none;
+     }
+     .desktop-image{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+     }
+     /* Image Card */
+      .desktop-image figure,
+      .response-desktop figure,
+      .components-desktop figure,
+      .desktop-settings figure{
+        background-color: rgb(51, 51, 88);
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid white;
+     }
+     .desktop-settings{
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+     }
+     figure img{
+        border-radius: inherit;
+     }
+     .response-desktop{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+     }
+     .response-desktop img{
+        height: 170px;
+     }
+     .components-desktop{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+     }
+     .components-desktop p{
+        text-align: center;
+     }
+     .architecture-title, 
+     .response-title-desktop,
+     .work-note,
+     .todoNote-desktop
+      {
+        text-align: center;
+        font-size: large;
+        display: block;
+     }
+
+     .desktop-flex-note{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+     }
+     .desktop-flex-note h2 , 
+     .p-note,
+     .backend-progress-note-desktop,
+     .project-overview,
+     .frontend-note
+     {
+        text-align: center;
+        font-size: large;
+     }
+     .frontend-note{
+        display: grid
+     }
+     .backendnote-desktop{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+     }
+     .backendnote-desktop div{
+        border: white solid 3px;
+        border-radius: 10px;
+        background-color: rgb(71, 71, 90);
+        height: 250px;
+        width: 250px;
+        padding: var(--gen-padding);
+     }
+
+     .backendnote-desktop div strong{
+        text-align:center;
+     }
+     .about-me-demo{
+        position: relative;
+        border: rgb(73, 158, 147) solid 3px;
+        border-radius: 5px;
+     }
+     .about-me-demo h3{
+        text-align: center;
+        position: absolute;
+        transform: none;
+        top: -17%;
+        left: 30%;
+        right: 30%;
+        padding: var(--gen-padding);
+       border: rgb(73, 158, 147) solid 3px;
+        border-radius: 10px;
+     }
+     .about-me-demo-desktop{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+     }
+     .todo-description{
+        background-color: rgb(18, 6, 71);
+        padding: var(--gen-padding);
+       font-size: large;
+       box-shadow: 0 0 6px white;
+     }
+     .contact-message{
+        animation: none;
+     }
+     /* Desktop Form */
+    .formDesktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .formDesktop div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formDesktop label{
+        font-size: large;
+        font-weight: bold;
+    }
+    .formDesktop input,textarea{
+        width: 50rem;
+        padding: var(--gen-padding);
+    }
+    .formDesktop button{
+        margin-top: 20px;
+        margin-bottom: var(--gen-margin);
+        padding: var(--gen-padding);
+        width: 200px;
+        border-radius: 10px;
+        color: white; 
+        font-size: large;
+        background-color: rgb(6, 6, 63);
+    }
+}
+@media (min-width: 1100px) {
+    .desktop-settings{
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+     }
+}

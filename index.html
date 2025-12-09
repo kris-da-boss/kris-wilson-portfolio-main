@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Wilson- Portfolio</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- Icons -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
 </head>
@@ -12,17 +14,18 @@
     <div class="header">
      <p>KingKris</p>
      <i class="fa fa-bars me-5 pe-sm-5 menuButton" aria-hidden="true" 
-   id="nav-button"></i>
+     id="nav-button"></i>
     </div>
     <!-- MENU  BAR-->
     <div class="menu">
         <div class="menuheader">
         <h3>MENU</h3>
-        <i class="fa-solid fa-xmark closeMenu"></i>
+        <i class="fa-solid fa-xmark closeMenu">
+        </i>
         </div>
     <div class="navigations">
-      <p><a href="#aboutme">About Me</a></p>
       <p><a href="/">Home</a></p>
+      <p><a href="#aboutme">About Me</a></p>
        <p><a href="projects.html">Latest Project</a></p>
     <p><a href="#otherproject">Other Project</a></p>
     </div><br><br>
@@ -35,7 +38,34 @@
     </div>
     </div>
     </div>
-
+       <!-- Desktop Screen Header -->
+        <div class="header-desktop-screen">
+        <p>KingKris</p>
+        <div>
+          <p><a href="#aboutMe-desktop">About Me</a></p>
+          <p><a href="projects.html">Latest Project</a></p>
+          <p><a href="#otherproject">Other project</a></p>
+          <p><a href="#contact-message"> Contact Me</a></p> 
+        </div>
+        </div> 
+        <!-- Desktop Profile -->
+      <div class="profile-about-header">
+        <div>
+          <p class="name-desktop">Hello, I'm <br> 
+            <span> Chris Wilson</span> <br> from Nigeria.</p><br>
+          <p class="intro-note-desktop" id="aboutMe-desktop">I'm a Creative frontend Developer with 3+ years of experience <br>in building high-performance, scalable, and responsive web soultions. <br> I'm also pushing my dream of being a FullStack developer. </p><br><br>
+          <p class="project-link">See More About Me</p><br><br>
+          <a href="./documents/chris-resume.pdf" download>DOWNLOAD RESUME</a>
+        </div>
+        <div class="profile-design">
+           <div class="profile-image-header">
+          <img src="images/profile-picture-1.jpg" alt="" >
+        </div>
+        </div>
+        </div>
+        
+    <!-- Mobile profile -->
+        <div class="mobile-profile">
      <p class="name">CHRIS WILSON</p>
     <p class="occupation">FRONTEND DEVELOPER</p>
     <div class="image-wrapper">
@@ -49,13 +79,15 @@
      </p>
       </div>
     <br>
+    </div>
     
     <br><br><br><br>
+    <!-- Skill and Tools -->
     <div class="skills-tools">
     <h2 class="h2">SKILLS AND TOOLS</h2>
     <p class="skills-note">Skills i use to bring bring projects to life</p>
     <br>
-    <h3 class="h3">Frontend</h3>
+    <h3 class="h3">FRONTEND</h3>
     <div class="frontend-skills">
     <p>HTML</p>
     <p>CSS</p>
@@ -66,7 +98,7 @@
     <p>jQuery</p>
     </div>
     <br>
-    <h3 class="h3">Tools</h3>
+    <h3 class="h3">TOOLS</h3>
         <ul class="tools">
         <li>Git/GitHub</li>
         <li>VS Code</li>
@@ -74,46 +106,87 @@
         </ul> 
 
         <div class="extraSkills">
-       <h3>Currently Learning FullStack Development:</h3>
-       <p>Node/Express.js(For BackEnd), <br>
-        MongoDB(For database) <br>
-        Other related frameworks
+       <h3>Currently Learning FullStack Development:</h3><br>
+       <p><span>Node/Express.js(For BackEnd),</span> <br><br>
+        <span>MongoDB(For database)</span>  <br><br>
+        <span>Other related frameworks</span>  
         </p>
         </div>
-    
+    <!-- Education -->
   <div class="education">
    <h2 class="h2">EDUCATION</h2>
    <hr>
    <br>
-    <p>BSc Computer Science in Nassarawa State University Keffi, Nigeria</p>
+   <div class="university-flex">
+    <p class="p">BSc Computer Science in Nassarawa State University Keffi, Nigeria <span>(2019-2023)</span><span>:</span></p>
     <br>
     <p>2019-2023</p>
-    <br>
+    </div>   
     <p>FreeCode Camp Student</p>
   </div>
-
+<!-- My work -->
   <div class="my-work">
     <h2 class="h2">MY LATEST WORK</h2>
     <hr>
     <br>
-    <i>This is my current portfolio project</i>
+    <i>This is my current project</i><br><br>
+    
+    <!-- Desktop project Card -->
+     <div>
+    <div class="desktop-settings">
+        <figure>
+         <img src="./images/screenshot9.jpg" alt="" width="300" height="200">
+        </figure>
+        <figure>
+         <img src="./images/screenshot10.jpg" alt="" width="300" height="200">
+        </figure>
+        <figure>
+         <img src="./images/screenshot5.jpg" alt="" width="300" height="200">
+        </figure><br>
+    </div><br>
+    <div class="work-note">
+      <figcaption class="project-title-desktop">An Ecommerce website FullStack project Currently in progress(frontend completed)</figcaption><br>
+        <a href="./projects.html">read more...</a>
+    </div> 
+   </div>
+
+  <!-- Mobile project card -->
     <div class="projectCard">
         <figure>
          <img src="./images/screenshot9.jpg" alt="">
-         <figcaption>An Ecommerce website FullStack project Currently in progress(frontend completed)</figcaption>
-        </figure><br>
+        </figure>
+    <figcaption>An Ecommerce website FullStack project Currently in progress(frontend completed)</figcaption><br>
          <a href="./projects.html">read more...</a>
     </div><br>
+
     <h3 class="h3" id="otherproject">OTHER WORKS</h3>
     <hr>
+    <!-- Todo Desktop -->
+     <div><br><br>
+       <div class="desktop-settings">
+        <figure>
+         <img src="./images/todo1.jpg" alt="" width="300" height="200">
+        </figure>
+
+        <figure>
+         <img src="./images/todo4.jpg" alt="" width="300" height="200">
+        </figure>
+
+        <figure>
+         <img src="./images/todo3.jpg" alt="" width="300" height="200">
+        </figure>
+    </div><br>
+    <p class="todoNote-desktop">Interactive To List App</p>
+     </div>
+     <!-- Todo mobile -->
     <br>
     <div class="projectCard">
         <figure>
          <img src="./images/todo1.jpg" alt="">
-         <figcaption>Interactive Todo List App</figcaption>
-        </figure><br>
+        </figure>
+        <figcaption>Interactive Todo List App</figcaption>
     </div><br>
-    <p><strong>Tech Stack:</strong></p><br>
+    <p><strong>Tech Stacks:</strong></p><br>
         <div class="tech-stack-flex">
         <p>HTML</p>
         <p>CSS</p>
@@ -125,21 +198,88 @@
     <div class="projectCard">
         <figure>
          <img src="./images/todo3.jpg" alt="">
-         <figcaption>Interactive NavBar</figcaption>
-        </figure><br>
+        </figure>
+        <figcaption>Interactive NavBar</figcaption>
     </div><br>
+   <div class="shadow-effect"></div>
   </div>
   <br><br>
     <footer>  
-      <h2 class="contact-message">I will love hearing from you</h2>
+      <h2 class="contact-message" id="contact-message">I'll love hearing from you</h2><br><br>
       <div class="contact">
-      <h3>Contact Me</h3>
-     <a href="mailto:kriswilson00000@gmail.com">Email: kriswilson00000@gmail.com</a><br><br>
-     <a href="tel:08134211169">Call Me</a><br>
+        <h3>Contact Me</h3>
+        <div>
+        <div>
+     <a href="mailto:kriswilson00000@gmail.com">Email: kriswilson00000@gmail.com</a>
+        </div>
+      <br><br>
+      <div>
+      <a href="tel:08134211169">Call Me</a><br>
      <p>Send a Message on Watsap: 08134211169</p><br>
-     <p>&copy; 2025 | Designed and developed by Chris Wilson  (aka KingKris)</p>
       </div>
-     
+      </div>
+      <button class="formButton">Fill a Form?</button>
+
+      <!-- <h3><br>PREFER A FORM?</h3> -->
+
+      <!-- user form desktop -->
+        
+        <form action="https://formspree.io/f/mvgewolb" class="formDesktop">
+
+          <div>
+            <label for="name" >Name</label>
+          <input type="text" required placeholder="Your name or nickname" name="name" id="name">
+          </div>
+         
+           <div>
+          <label for="number"> Phone Number</label>
+          <input type="tel" required placeholder="phone number" name="phone" id="number">
+          </div>
+          
+           <div>
+          <label for="email"> Email</label>
+           <input type="text" required placeholder="email" name="email" id="email">
+           </div>
+          
+          <div>
+           <label for="message"> Message</label>
+          <textarea name="message" id="message" cols="40" rows="7" placeholder="drop me a message"></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+
+       <p>&copy; 2025 | Designed and developed by Chris Wilson  (aka KingKris)</p>
+      </div>
+      <!-- User Form -->
+       <div class="formOverlay"></div>
+        <form action="https://formspree.io/f/mvgewolb" method="post" class="form-mobile">
+          <!-- animation -->
+           <p class="galaxy"></p>
+          <div>
+            <label for="name" >Name:</label>
+          <input type="text" required placeholder="Your name or nickname" name="name" id="name">
+          </div>
+         
+           <div>
+          <label for="number"> Phone Number:</label>
+          <input type="tel" required placeholder="phone number" name="phone" id="number">
+          </div>
+          
+           <div>
+          <label for="email"> Email: </label>
+           <input type="text" required placeholder="email" name="email" id="email">
+           </div>
+          
+          <div>
+           <label for="message"> Message:</label>
+          <textarea name="message" id="message" cols="40" rows="7" placeholder="drop me a message"></textarea>
+          </div>
+          
+
+          <button type="submit">submit</button>
+        </form>
+        
+   
     </footer>
    
     <script src="index.js"></script>
