@@ -387,8 +387,8 @@ padding:var(--gen-padding);
 }
 /* Form background anime */
 .galaxy{
-    width: 2px;
-    height: 2px;
+    width: 1px;
+    height: 1px;
     position: absolute;
     background: transparent;
     animation: spaceAnim  30s linear infinite,
@@ -397,8 +397,8 @@ padding:var(--gen-padding);
  .galaxy::after{
     content: '';
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     top: -500px;
     background: transparent;
     box-shadow: var(--box-shadow);
